@@ -7,6 +7,7 @@
 *.TPPL
 *.log
 *.TRF
+**/BASE
 
 ELTOD[0-9].bin.start.*
 ELTOD[0-9].bin.end.*
