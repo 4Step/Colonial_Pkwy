@@ -1,0 +1,3 @@
+AM factored from 2.5 hours up to 3.0 hours using the 3.0/2.5 ratio.
+OP factored from 18.5 hours down to 18 hours based on the change to the AM matrix...
+	removed the volume based on the O-D / Total Factor.
