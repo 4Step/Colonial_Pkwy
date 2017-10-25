@@ -1,0 +1,1 @@
+Models run under the old pricing policy #1 where the min is 30c and max is 45c.
