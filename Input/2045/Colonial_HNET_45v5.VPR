@@ -71,7 +71,7 @@ ExternalLinkage=
 ActiveNodeColorGroup=1
 NodeColorGroup1=zone labels
 NodeColorPaletteIndex1=0
-ActiveLinkColorGroup=3
+ActiveLinkColorGroup=13
 LinkColorGroup1=Toll Link v4 & TollSegLen
 LinkColorPaletteIndex1=0
 LinkDrawOffset1=0
@@ -195,13 +195,13 @@ LinkColor3_1=255,0,5,FTYPE=98
 LinkColor3_2=16711680,0,5,FTYPE=97
 LinkColor3_3=4227072,0,3,FTYPE=96
 LinkColor3_4=16711935,0,1,FTYPE=93,94
-ActiveLinkPostGroup=5
+ActiveLinkPostGroup=7
 LinkPostGroup1=Ingress & Egress
 LinkPostSelectStr1=FTC2=91,96,97,98
 LinkColor5_2=33023,0,12,FTC2=97
 NodeColor1_1=33023,4,9,N<138; ' subarea TAZ design'
 NodeColor1_2=255,0,2,N>137; 'nodes that are not TAZs'
-ActiveNodePostGroup=1
+ActiveNodePostGroup=2
 NodePostGroup1=zones
 NodePost1_1=N,-1,0
 NodePostSelectStr1=N<33
@@ -283,9 +283,9 @@ LinkColor6_3=7002534,0,2,NUM_LANES=3
 LinkColor6_4=9167102,0,2,NUM_LANES=2
 LinkColor6_5=4227327,0,1,NUM_LANES=1
 LinkCalcGroup4=capacity change
-LinkCalcApply4=3
-LinkCalcCondition4=FTYPE=91&NUM_LANES=2
-LinkCalc4_1=CAPACITY=1930
+LinkCalcApply4=1
+LinkCalcCondition4=FTYPE=91&NUM_LANES=3
+LinkCalc4_1=CAPACITY=1006
 LinkPostGroup4=capacity and speed
 LinkPostSelectStr4=
 LinkPostGroup5=speed
@@ -339,7 +339,7 @@ LinkPost1_1=DISTANCE,-1,0
 LinkColor6_6=255,5,19,NUM_LANES=0
 LinkPost4_1=CAPACITY,0,0
 LinkColor6_7=16711935,0,6,FTYPE=97-98
-LinkPost4_2=SPEED,16711680,0
+LinkPost4_2=POST_SPEED,16711680,0
 LinkCalcGroup10=delete
 LinkCalc10_1=$delete=T
 LinkCalcApply10=4
@@ -400,13 +400,14 @@ LinkPost13_1=DELAY,-1,0
 LinkPostSelectStr13=delay>0
 LinkPost4_3=NUM_LANES,-1,0
 LinkColor3_11=8421631,5,9,NUM_LANES=0
-LinkPostGroup14=
-LinkPost14_1=CHANGES,-1,0
-LinkPostSelectStr14=CHANGES>0
+LinkPostGroup14=capacity
+LinkPost14_1=CAPACITY,-1,0
+LinkPostSelectStr14=
 LinkCalcGroup13=post speed
 LinkCalc13_1=POST_SPEED=55
 LinkCalcApply13=3
 LinkCalcCondition13=FTYPE=91
+LinkColor13_2=65535,5,20,TOLLLINK>0
 
 [PLOT]
 ActiveSetUp=1
@@ -469,7 +470,7 @@ Set1Legend3Item1Draw=2,0,0.5,0.5,0,0,
 
 [SAVEVIEWS]
 RestoreLastView=1
-ViewLast=626264.142358533,630007.549262213,1528574.77811405,1530368.6846009
+ViewLast=593959.492756783,596051.176632668,1537626.71199411,1538629.08372925
 View0=927381.42810679,929606.357518218,718295.508518995,719271.127089117,View Last
 View1=591317.647853528,633466.88382943,1524971.60186157,1545170.25773267,corridor
 
@@ -558,6 +559,6 @@ NumRecords=1
 ScreenColor=16777215
 FreewayOutlineColor=5263440
 NumDisplayDec=-1
-ScreenFont=Tahoma,33023,10,Bold
+ScreenFont=Tahoma,255,10,Bold
 Order=HWYLAYER,TRNLAYER,PTSLAYER,LINLAYER,BDYLAYER,IMGLAYER,DRWLAYER
 

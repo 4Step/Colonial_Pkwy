@@ -1,0 +1,4 @@
+Models run under the old pricing policy #1 where the min is 30c and max is 45c.
+Network updated seg 3 to 10mph diff
+Capacity in GUL updated to 1006/lane
+This 2045 run corrected the virtually zero on the loop ramp from SR50 WB to SR408 SB/WB by editing the network slightly (moved the loop link to a new node).  
